@@ -1,0 +1,1 @@
+start /w "" "Docker Desktop Installer.exe" install -accept-license  --installation-dir=A:\Docker\DockerDesktop --wsl-default-data-root=D:\wsl\data\docker
