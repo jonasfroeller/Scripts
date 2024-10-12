@@ -12,6 +12,6 @@ black_suffix = ".lnk", ".pst", ".swp", ".temp", ".tmp"
 max_size = 0
 
 [Directory]
-black_name = ".next", ".nuxt", ".svelte_kit", "node_modules", "vendor"
+black_name = ".next", ".nuxt", ".angular", ".svelte_kit", "node_modules", "vendor", "target"
 
 [EA]
