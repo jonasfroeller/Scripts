@@ -1,1 +1,2 @@
-git config http.postBuffer 10g
+REM 500MB
+git config http.postBuffer 524288000
