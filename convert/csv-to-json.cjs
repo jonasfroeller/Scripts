@@ -1,6 +1,6 @@
 const filename = "./input.csv";
-const fs = require("fs");
-const { readFileSync } = require("fs");
+const fs = require("node:fs");
+const { readFileSync } = require("node:fs");
 
 function readFile(filename) {
   try {
@@ -8,12 +8,12 @@ function readFile(filename) {
 
     const text = contents.split(/\r?\n/);
 
-    let array = [];
+    const array = [];
 
     for (let i = 0; i < text.length - 1; i++) {
-      let line = text[i].split(/[;\t]/);
+      const line = text[i].split(/[;\t]/);
 
-      let row = [];
+      const row = [];
       for (let j = 0; j < line.length; j++) {
         row.push(line[j]);
       }
@@ -27,12 +27,17 @@ function readFile(filename) {
   }
 }
 
-let jsonArray = readFile(filename);
+const jsonArray = readFile(filename);
 
-fs.writeFile("output.json", JSON.stringify(jsonArray, null, 2), { flag: "w" }, function (err) {
-  if (err) {
-    return console.log(err);
-  } else {
+fs.writeFile(
+  "output.json",
+  JSON.stringify(jsonArray, null, 2),
+  { flag: "w" },
+  (err) => {
+    if (err) {
+      return console.log(err);
+    }
+
     console.log("The file was saved!");
   }
-});
+);

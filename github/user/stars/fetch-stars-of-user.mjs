@@ -100,7 +100,7 @@ async function generateHTML(username) {
 
 generateHTML(username)
   .then((html) => {
-    writeFileSync("starred_repos.html", html);
+    writeFileSync("starred-repos.html", html);
     console.log("HTML generated and saved successfully!");
   })
   .catch((error) => {
