@@ -4,6 +4,8 @@ Scripts to improve developer experience.
 
 ## Table of Contents
 
+- 📁 **backup/**
+- 📄 backup-env.ps1
 - 📁 **bookmarks/**
 - 📄 README.md
 - 📄 webdevelopment.html
